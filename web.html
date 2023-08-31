@@ -1,29 +1,71 @@
-
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <meta name="viewport" content="width=device-width", initial-scale=1.0 />
-    <link href="Styles/bootstrap.css" rel="stylesheet" />
-    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
-    <script src="Styles/jquery-1.10.2.min.js"></script>
-    <script src="Styles/bootstrap.min.js"></script>
-    <link href="Styles/StyleSheet.css" rel="stylesheet" />
-    <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container">
-		<header>
-			<h4> Home Page </h4>
-		</header>
 
-		<section>
-		
+  <div class="full-content">
+    <header>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+
+    <content>
+      <div class="content-head">
+        <h1>We're <br> <b>coming <br> soon </b></h1>
+      </div>
+      <div class="content-body">
+        <p>
+          Hello fellow shoppers! We're currently building our new <br>fashion store.
+          Add your email below to stay up-to-date with <br> announcements and our launch deals.
+        </p>
+      </div>
+
+      <div class="content-footer">
+        <div class="submit-email">
+          <input type="email" placeholder="Email Address" class="form-group" id="email">
+          <a href="#"><image src="images/icon-error.svg" width:50px; height:50px; id="icon-error"></a>
+          <button onclick="sendEmail()"><img src="images/icon-arrow.svg" alt="icon-arror"></button>
+        </div>
+        <p id="error-message"></p>
+      </div>
+
+    </content>
 
 
-		</section>
+    <footer>
 
-	</div>
-	
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">dipono joel manasoe</a>.
+      </p>
+    </footer>
+  </div>
+
+
+  <div class="hero-picture">
+    <!--<img src="images/hero-desktop.jpg" alt="hero" id="hero">-->
+    <picture>
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 375px)">
+      <img src="images/hero-desktop.jpg" alt="hero" id="hero">
+  </picture>
+  </div>
+
 </body>
+
+<script type="text/javascript" src="script/index.js"></script>
+
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    width: 100%;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    font-size: 16px;
+    color: black;
+}
+
+.full-content{
+    margin: auto;
+}
+
+.content-head{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.content-head h1{
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 10px;
+    font-family: 400;
+}
+
+.content-head b{
+    color: black;
+    font-weight: 600;
+}
+
+.content-body{
+    margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+}
+
+.content-footer{
+    margin-top: 25px;
+}
+
+.submit-email{
+    display: flex;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(0, 36%, 70%);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsl(0, 36%, 70%);
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: hsl(0, 36%, 70%);
+}
+
+.icon-error{
+    margin-left: 50px;
+}
+.submit-email a img {
+    margin-top: 5px;
+    margin-left: -80px;  
+}
+
+.form-group{
+    width: 350px;
+    height: 35px;
+    border: none;
+    border: grey 1px solid;
+    border-radius: 20px;
+    color: black;
+}
+
+
+input{
+    text-indent: 20px;
+
+}
+
+button{
+    margin-left: -50px;
+    height: 37px;
+    width: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 80%, 77%);
+}
+
+button:active{
+    background-color: rgb(252, 216, 222);
+}
+
+#error-message{
+    color: hsl(0, 93%, 68%);
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+footer{
+    padding: 0;
+    margin: 0;
+    margin-top: 70px;
+    
+}
+
+footer a{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color:hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/*============================= Hero =========================*/
+
+.hero-picture img{
+    height: 99vh;
+}
+
+/*=======================   Responsive  ========================*/
+
+@media only screen and (max-width: 375px) {
+    body{
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .content-body{
+        margin: 25px;
+    }
+
+    .content-body br{
+        content: ' ';
+    }
+
+    .submit-email{
+        margin: 35px 15px 0 15px;
+    }
+
+    header{
+        position: absolute;
+        top: 25px;
+        left: 10%px;
+    }
+
+    .hero-picture{
+        margin-top:75px;
+    }
+/*
+    header{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .full-content{
+        width: 100%;
+        text-align: center;
+        display: flex;
+
+    }
+
+    .hero-picture{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+
+    content{
+        position: absolute;
+        top: 600px;
+    }
+
+    .submit-email a img {
+        margin-top: 8px;
+        margin-left: -135px;  
+    }
+
+    #error-message{
+        color: rgb(255, 161, 175);
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    footer{
+        position: absolute;
+        top: 950px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .attribution{
+        text-align: center;
+    }*/
+}

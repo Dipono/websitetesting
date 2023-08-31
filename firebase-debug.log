@@ -1,0 +1,89 @@
+[debug] [2022-02-25T15:15:08.256Z] ----------------------------------------------------------------------
+[debug] [2022-02-25T15:15:08.259Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Family-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-02-25T15:15:08.260Z] CLI Version:   10.2.0
+[debug] [2022-02-25T15:15:08.260Z] Platform:      win32
+[debug] [2022-02-25T15:15:08.260Z] Node Version:  v14.18.0
+[debug] [2022-02-25T15:15:08.263Z] Time:          Fri Feb 25 2022 17:15:08 GMT+0200 (South Africa Standard Time)
+[debug] [2022-02-25T15:15:08.264Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-25T15:15:08.271Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-02-25T15:15:08.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-25T15:15:08.489Z] > authorizing via signed-in user (joel.buti97@gmail.com)
+[debug] [2022-02-25T15:15:08.490Z] [iam] checking project base-apparel-d7da6 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-25T15:15:08.492Z] > refreshing access token with scopes: []
+[debug] [2022-02-25T15:15:08.493Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-25T15:15:11.899Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 25 Feb 2022 15:15:12 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-25T15:15:11.936Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/base-apparel-d7da6:testIamPermissions [none]
+[debug] [2022-02-25T15:15:11.936Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/base-apparel-d7da6:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-25T15:15:13.843Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-02-25T15:15:13.844Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-02-25T15:15:15.723Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/base-apparel-d7da6:testIamPermissions 200
+[debug] [2022-02-25T15:15:15.724Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/base-apparel-d7da6:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-25T15:15:15.728Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/base-apparel-d7da6 [none]
+[debug] [2022-02-25T15:15:22.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/base-apparel-d7da6 200
+[debug] [2022-02-25T15:15:22.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/base-apparel-d7da6 {"projectId":"base-apparel-d7da6","projectNumber":"345235377338","displayName":"Base-Apparel","name":"projects/base-apparel-d7da6","resources":{"hostingSite":"base-apparel-d7da6"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'base-apparel-d7da6'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-25T15:15:22.537Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-25T15:15:22.538Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-25T15:15:23.572Z] <<< HTTP RESPONSE 200 {"date":"Fri, 25 Feb 2022 15:15:24 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-25T15:15:23.599Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/base-apparel-d7da6/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-25T15:15:26.962Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 25 Feb 2022 15:15:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[base-apparel-d7da6]: beginning deploy... 
+[info] i  hosting[base-apparel-d7da6]: found 14 files in public 
+[debug] [2022-02-25T15:15:27.195Z] > refreshing access token with scopes: []
+[debug] [2022-02-25T15:15:27.198Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-25T15:15:27.202Z] [hosting] hash cache [cHVibGlj] stored for 14 files
+[debug] [2022-02-25T15:15:27.202Z] [hosting][hash queue][FINAL] {"max":150,"min":111,"avg":126.35714285714286,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":166}
+[debug] [2022-02-25T15:15:28.219Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 25 Feb 2022 15:15:29 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-25T15:15:28.245Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/base-apparel-d7da6/versions/e3071e56c075c308:populateFiles [none]
+[debug] [2022-02-25T15:15:28.245Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/base-apparel-d7da6/versions/e3071e56c075c308:populateFiles {"files":{"/index.html":"201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603","/images/bg-pattern-desktop.svg":"bd5701ed4253e045a225eb92336f936029fc1b3db0694b0658abcd177f0c54a2","/images/favicon-32x32.png":"29750e589921f6c41835abe1859e3dc59a8b4f30ff3b5728a0dda38b978eed79","/images/icon-arrow.svg":"bef23e8f8f457e376ab0ed13f8bc7bed020a0bfad4613a77efb7cf27e90bf918","/images/icon-error.svg":"ddf43efaf08abb8ff1d461abce4b04c158b267e5ed691c7212b72a012616c4f3","/images/logo.svg":"e1310a75377eaf17a86f1a60c137e668683b935e44b912977aac0930083aa7de","/script/index.js":"437b2ee22043d391efd0dc043a589df6391aaa6d9bdbe3014cdd546d64e7713c","/styles/index.css":"9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5","/images/hero-mobile.jpg":"021f8e0695446fbfb01fbd41512436e06194c2f26429259b2d2e31e22e93e626","/design/mobile-design.jpg":"04d77d691e9eef39e8f94baf1b8073df054cad67fb404da9a74ad3b2d0e5d506","/design/desktop-preview.jpg":"f0c75051ae19a18c2444a21d02c124b5c19d9a588bc9ce994b4d7f73b4c2c32d","/images/hero-desktop.jpg":"129453f199c2adabfb4d7382ea8455bc04c2c4cf2abb82ebc1515ebe6b6c9aaf","/design/desktop-design.jpg":"b718a7788d3a86b473fa86046614e60ff203ff3759803410353ec477b35922bb","/design/active-states.jpg":"1bf929d75b8a70df3869ed0242d1ce90ef62a977719e743a21b8016d8b021570"}}
+[info] i  hosting: adding files to version [0/14] (0%) 
+[debug] [2022-02-25T15:15:31.039Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/base-apparel-d7da6/versions/e3071e56c075c308:populateFiles 200
+[debug] [2022-02-25T15:15:31.039Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/base-apparel-d7da6/versions/e3071e56c075c308:populateFiles {"uploadRequiredHashes":["201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603","9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files"}
+[debug] [2022-02-25T15:15:31.042Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603 [none]
+[debug] [2022-02-25T15:15:31.042Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603 [stream]
+[debug] [2022-02-25T15:15:31.045Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5 [none]
+[debug] [2022-02-25T15:15:31.045Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5 [stream]
+[debug] [2022-02-25T15:15:31.048Z] [hosting][populate queue][FINAL] {"max":3847,"min":3847,"avg":3847,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3854}
+[debug] [2022-02-25T15:15:31.048Z] [hosting] uploads queued: 2
+[info] i  hosting: uploading new files [0/2] (0%) 
+[info] i  hosting: uploading new files [0/2] (0%) 
+[debug] [2022-02-25T15:15:33.601Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5 200
+[debug] [2022-02-25T15:15:33.602Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/9da0a65f43f7f0c1a6e302218bb581242c9cb26389dfdac822a178aeb80a28a5 [stream]
+[debug] [2022-02-25T15:15:33.609Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603 200
+[debug] [2022-02-25T15:15:33.609Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/base-apparel-d7da6/versions/e3071e56c075c308/files/201861c676a41dc51354fcb083594eba2feae37e7a91c27e6c1ba813c520c603 [stream]
+[debug] [2022-02-25T15:15:33.610Z] [hosting][upload queue][FINAL] {"max":2570,"min":2561,"avg":2565.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":2571}
+[info] +  hosting[base-apparel-d7da6]: file upload complete 
+[debug] [2022-02-25T15:15:33.611Z] [hosting] deploy completed after 6642ms
+[debug] [2022-02-25T15:15:33.618Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "base-apparel-d7da6"
+    },
+    "site": "base-apparel-d7da6",
+    "version": "sites/base-apparel-d7da6/versions/e3071e56c075c308"
+  }
+]
+[info] i  hosting[base-apparel-d7da6]: finalizing version... 
+[debug] [2022-02-25T15:15:33.620Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-25T15:15:33.620Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
